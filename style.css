@@ -123,7 +123,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 90vh;
+  min-height: 70vh;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -147,7 +147,7 @@ body {
 
 .intro-description {
   font-size: 1.2rem;
-  color: #636e72;
+  color: #222;
   max-width: 600px;
   animation: fadeInUp 1s ease 0.6s;
   animation-fill-mode: both;
@@ -159,7 +159,6 @@ body {
   padding: 2rem 0;
   margin-top: auto;
   width: 100%;
-  min-height: 100vh;
   position: relative;
   left: 50%;
   right: 50%;
@@ -239,7 +238,7 @@ body {
 /* Section styles */
 .section {
   min-height: 100vh;
-  padding: 4rem 2rem 2rem;
+  padding: 5%;
   scroll-margin-top: 4rem;
 }
 
@@ -247,6 +246,10 @@ body {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #333;
+}
+
+#about {
+  min-height: fit-content;
 }
 
 /* Projects styles */
@@ -271,20 +274,24 @@ body {
 .project-card:hover {
   transform: translateY(-5px);
 }
+#projects {
+  min-height: fit-content;
+}
 
 /* CV styles */
 .cv-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 30px;
   background: rgba(255, 255, 255, 0.92); 
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.10);
   backdrop-filter: blur(2px);
+  font-family: "calibri", sans-serif;
 }
 
 .cv-item {
-  padding: 6px 12px;
+  width: 40%;
 }
 
 .cv-item h3 {
@@ -293,9 +300,10 @@ body {
   margin-bottom: 0.5rem;
 }
 
-#cv-info {
-  margin-right: 35px;
+.cv-item li {
+  margin-left: 8%;
 }
+
 
 .arbeidserfaring-text {
   font-size: 1.2rem;
@@ -363,6 +371,11 @@ body {
 }
 
 @media (max-width: 480px) {
+  .navbar {
+    width: 65%;
+    padding: 0.5rem 1rem;
+    margin-bottom: 5%;
+  }
   .nav-brand {
     font-size: 1.2rem;
   }
@@ -375,9 +388,8 @@ body {
     padding: 1rem;
   }
   .section {
-    padding: 5rem 1rem 1rem;
+    width: 100vw;
   }
-
   .section h2 {
     font-size: 2rem;
   }
@@ -402,9 +414,27 @@ body {
     font-size: 1.2rem;
   }
 
+  .project-card {
+    width: calc(100% - 1.5rem);
+    max-width: 100%;
+    padding: 1rem;
+  }
+
   .project-card p, .project-card a {
     display: none;
   }
+
+  .cv-container {
+    justify-content: space-around;
+    font-size: 0.9rem;
+  }
+  #cv-info {
+    margin-right: 5px;
+  }
+  
+.cv-item h3 {
+  font-size: 1rem;
+}
 }
 
 
@@ -422,7 +452,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   z-index: -1;
 }
