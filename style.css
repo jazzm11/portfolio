@@ -1,6 +1,5 @@
 /* @ font imports */
 @import url("https://use.typekit.net/wmt6vkt.css");
-@import url("https://use.typekit.net/wmt6vkt.css");
 
 /* Reset default styles */
 * {
@@ -10,7 +9,7 @@
 }
 
 body {
-  font-family: "urbana", sans-serif;
+  font-family: "calibri", sans-serif;
   line-height: 1.6;
   background-color: #f8f9fa;
   min-height: 100vh;
@@ -64,7 +63,7 @@ body {
   border: none;
   color: #333; /* Same as .nav-brand */
   font-size: 1.25rem;
-  font-family: "urbana", sans-serif;
+  font-family: "calibri", sans-serif;
   font-weight: 500;
   font-style: italic;
   padding: 0;
@@ -426,15 +425,21 @@ body {
 
   .cv-container {
     justify-content: space-around;
+    flex-direction: column;
     font-size: 0.9rem;
   }
   #cv-info {
     margin-right: 5px;
   }
   
-.cv-item h3 {
-  font-size: 1rem;
-}
+  .cv-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .cv-item h3 {
+    font-size: 1rem;
+  }
 }
 
 
