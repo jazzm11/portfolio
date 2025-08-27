@@ -251,7 +251,7 @@ body {
   min-height: fit-content;
 }
 
-/* Projects styles */
+/* Projects styles 
 .project-container {
   display: flex;
   flex-wrap: wrap;
@@ -275,7 +275,8 @@ body {
 }
 #projects {
   min-height: fit-content;
-}
+} 
+*/
 
 /* CV styles */
 .cv-container {
