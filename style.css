@@ -309,6 +309,11 @@ body {
   margin-bottom: 1rem;
 }
 
+.utdanning-text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 768px) {
   .navbar {
     display: flex;
