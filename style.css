@@ -312,6 +312,15 @@ body {
   margin-bottom: 1rem;
 }
 
+#pf_bilde {
+  width: 270px;
+  height: 270px;
+  border-radius: 5%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 768px) {
   .navbar {
     display: flex;
